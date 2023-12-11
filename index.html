@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3616af1012.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #444, #0097e6);
+}
+.box{
+    width: 750px;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    position: relative;
+    padding: 15px;
+    overflow: hidden;
+}
+.box .image img{
+    height: 130px;
+    width: 130px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+.box .image::before{
+    content:'' ;
+    position: absolute;
+    top: -6%; left: -18%;
+    height: 330px;
+    width: 300px;
+    background: #0097e6;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    box-shadow: 0 0 0 25px #0097e6;
+
+}
+.box .content{
+    width: 100%;
+    padding-left: 80px;
+    text-align: center;
+}
+.box .content .name{
+    color: #444;
+    letter-spacing: 2px;
+}
+.box .content .name span{
+    color: #0097e6;
+}
+.box .content .post{
+    margin: 10pz 0;
+    padding: 5px 0;
+    background: #0097e6;
+    border-radius: 50px;
+    font-weight: lighter;
+}
+.box .content .info{
+    margin-top: 20px;
+}
+.box .content .info li{
+    margin: 10px 0;
+    list-style-type: none;
+    font-size: 17px;
+    text-align: left;
+    color: #444;
+
+}
+.box .content .info li i{
+    padding: 0 10px;
+    color: #0097e6;
+}
+.box .content .icons{
+    width: 100%;
+    text-align: right;
+}
+.box .content .icons a{
+    height: 35px;
+    width: 35px;
+    line-height: 33px;
+    text-align: center;
+    color: #0097e6;
+    border: 2px solid #0097e6;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.box .content .icons  a:hover{
+    background: #0097e6;
+    color: #fff;
+}
+@media(max-width:768px){
+    .box{
+        flex-flow: column;
+        width: 350px;
+        margin: 0 10px;
+        padding: 0 25px;
+    }
+    .box .content{
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+    .box .image::before{
+        top: -40%; left: 15px;
+    }
+    .box .image img{
+        margin-top: 8px;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+}
+    </style>
+    <title>signature 5</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image">
+                <img src="sabbir.jpg" alt="#" height="100px">
+            </div>
+            <div class="content">
+                <h1 class="name">Sabbir<span> Hossain</span></h1>
+                <h3 class="post">Web Designer</h3>
+                <ul class="info">
+                   <li> <a href="#"><i class="fa-solid fa-phone"></i>01632732220</a></li>
+                   <li> <a href="#"><i class="fa-solid fa-envelope"></i>sabbir92828@gmail.com</a></li>
+                   <li> <a href="#"><i class="fa-solid fa-map-marker-alt"></i>Pancharri , khagracharri</a></li>
+                   <li> <a href="#"><i class="fa-solid fa-globe"></i>www.sabbir.com</a></li>
+                </ul>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+  
+    
+</body>
+</html>
